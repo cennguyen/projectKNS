@@ -1,0 +1,71 @@
+﻿@model IEnumerable<PageAdmin.Models.SalesPerson>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <h1>Welcome to Page direction SalesPerson </h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                <form method="post" asp-action="Search">
+                    <div class="row input-group">
+                        <input type="text" name="search" id="search" class="form-control" placeholder="Enter Phone number to Found"  />
+                        <div class="input-group-btn">
+                            <input type="submit" value="search" class="btn btn-primary"/>
+                        </div>
+                    </div>
+                </form>
+            </th>
+        </tr>
+    </thead>
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HireDate)
+            </th>
+            <th>
+                <a asp-action="Create" class="btn btn-outline-success" size="1"><img src="~/image/add.png" height="23" /> Add SalesPerson</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HireDate)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.SalesPersonID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.SalesPersonID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.SalesPersonID" onclick="return confirm('Are you sure to delete this record?')">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

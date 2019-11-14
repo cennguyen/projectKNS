@@ -1,0 +1,60 @@
+﻿@model IEnumerable<PageAdmin.Models.Invoice>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <h1>Welcome to Page direction Invoice</h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                <form method="post" asp-action="Search">
+                    <div class="row input-group">
+                        <input type="text" name="search" id="search" class="form-control" placeholder="Input Payment Type to Found" color="black" />
+                        <div class="input-group-btn">
+                            <input type="submit" value="Search" class="btn btn-primary" />
+                        </div>
+                    </div>
+                </form>
+            </th>
+        </tr>
+    </thead>
+</table>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PaymentType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amout)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cleared)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PaymentType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Amout)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cleared)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.PaymentID">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,79 @@
+﻿@model IEnumerable<PageAdmin.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Welcome to the Pages Admin</h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                <form method="post" asp-action="Search">
+                    <div class="row input-group">
+                        <input type="text" name="search" id="search" class="form-control"  placeholder="Input Name to found"//>
+                        <div class="input-group-btn">
+                            <input type="submit" value="search" class="btn btn-primary"/>
+                        </div>
+                    </div>
+                </form>
+            </th>
+        </tr>
+    </thead>
+</table>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StandardPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnityType)
+            </th>
+            <th>
+                <a asp-action="Create" class="btn btn-outline-success" size="1"><img src="~/image/add.png" height="23" /> Add Product</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Count() == 0)
+        {
+            <tr>
+                <td colspan="3" style="color:red">No Match Any Document</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StandardPrice)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UnityType)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ProductID">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.ProductID">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.ProductID" onclick="return confirm('Are you sure to delete this record?')">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
