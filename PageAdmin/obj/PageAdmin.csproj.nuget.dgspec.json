@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\toan\\source\\repos\\PageAdmin\\PageAdmin\\PageAdmin.csproj": {}
+    "C:\\Users\\AN\\Documents\\GitHub\\projectKNS\\PageAdmin\\PageAdmin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\toan\\source\\repos\\PageAdmin\\PageAdmin\\PageAdmin.csproj": {
+    "C:\\Users\\AN\\Documents\\GitHub\\projectKNS\\PageAdmin\\PageAdmin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\toan\\source\\repos\\PageAdmin\\PageAdmin\\PageAdmin.csproj",
+        "projectUniqueName": "C:\\Users\\AN\\Documents\\GitHub\\projectKNS\\PageAdmin\\PageAdmin.csproj",
         "projectName": "PageAdmin",
-        "projectPath": "C:\\Users\\toan\\source\\repos\\PageAdmin\\PageAdmin\\PageAdmin.csproj",
-        "packagesPath": "C:\\Users\\toan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\toan\\source\\repos\\PageAdmin\\PageAdmin\\obj\\",
+        "projectPath": "C:\\Users\\AN\\Documents\\GitHub\\projectKNS\\PageAdmin\\PageAdmin.csproj",
+        "packagesPath": "C:\\Users\\AN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AN\\Documents\\GitHub\\projectKNS\\PageAdmin\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\toan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

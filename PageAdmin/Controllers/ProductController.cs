@@ -135,6 +135,8 @@ namespace PageAdmin.Controllers
             Products = await product.ToListAsync();
             return View(Products);
         }
+//just testing about pull push stuff
+// testing 1,2,3
 
     }
 }
