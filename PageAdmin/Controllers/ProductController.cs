@@ -135,10 +135,13 @@ namespace PageAdmin.Controllers
             Products = await product.ToListAsync();
             return View(Products);
         }
+<<<<<<< HEAD
 //just testing about pull push stuff
 // testing 1,2,3
 //testint testing 3 2 1
 //test again about github push pull comit
+=======
+>>>>>>> parent of c999011... testing pull push github
 
     }
 }
