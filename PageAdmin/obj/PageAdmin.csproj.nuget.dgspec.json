@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AN\\Documents\\GitHub\\projectKNS\\PageAdmin\\PageAdmin.csproj": {}
+    "C:\\Users\\AN\\Documents\\GitHub\\PageAdmin\\PageAdmin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AN\\Documents\\GitHub\\projectKNS\\PageAdmin\\PageAdmin.csproj": {
+    "C:\\Users\\AN\\Documents\\GitHub\\PageAdmin\\PageAdmin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AN\\Documents\\GitHub\\projectKNS\\PageAdmin\\PageAdmin.csproj",
+        "projectUniqueName": "C:\\Users\\AN\\Documents\\GitHub\\PageAdmin\\PageAdmin.csproj",
         "projectName": "PageAdmin",
-        "projectPath": "C:\\Users\\AN\\Documents\\GitHub\\projectKNS\\PageAdmin\\PageAdmin.csproj",
+        "projectPath": "C:\\Users\\AN\\Documents\\GitHub\\PageAdmin\\PageAdmin.csproj",
         "packagesPath": "C:\\Users\\AN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AN\\Documents\\GitHub\\projectKNS\\PageAdmin\\obj\\",
+        "outputPath": "C:\\Users\\AN\\Documents\\GitHub\\PageAdmin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AN\\AppData\\Roaming\\NuGet\\NuGet.Config",
